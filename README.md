@@ -35,6 +35,9 @@ A feature that allows the user to create a color palette on the client side.
 - May contain bugs and problems when specifying some size.
 - You can't manage vehicle colors with this resource due to VC:MP limitations.
 
+### Screenshots
+![Image 1](https://i.imgur.com/h9hd1Uk.png)
+
 ### Example of usage
 ```squirrel
 myColorPalette <- GUIColorPalette();
@@ -53,6 +56,3 @@ function GUI::ReceiveColorFromPalette(colour) {
 	Console.Print(color + "\f - " + "RGB([#ffffff]" + colour.R + ", " + colour.G + ", " + colour.B + color + ")\n\f - HEX: [#ffffff]" + color.slice(1, 8));
 }
 ```
-
-### Screenshots
-![Image 1](https://i.imgur.com/h9hd1Uk.png)
