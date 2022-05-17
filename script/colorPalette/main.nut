@@ -349,7 +349,7 @@ GUIColorPalette <- function(pos = null, size = null, elementColour = null) {
 	_colorPalette.struct.element[id].Canvas.Pos.Y = pos.Y;
 	
 	_colorPalette.struct.element[id].Sprite = GUISprite(); /* Gradient Sprite */
-	_colorPalette.struct.element[id].Sprite.SetTexture("gradient.png");
+	_colorPalette.struct.element[id].Sprite.SetTexture("colorPalette/gradient.png");
 	_colorPalette.struct.element[id].Sprite.Colour = Colour(255, 255, 255, 255);
 	
 	_colorPalette.struct.element[id].Selection = GUICanvas(); /* Color level indicator */
