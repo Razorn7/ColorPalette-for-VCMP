@@ -1,4 +1,4 @@
-dofile("palette.nut");
+dofile("colorPalette/main.nut");
 
 myColorPalette <- GUIColorPalette();
 myColorPalette.Pos = VectorScreen(500, 400);
