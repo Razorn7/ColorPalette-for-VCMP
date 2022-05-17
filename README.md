@@ -3,9 +3,9 @@ A feature that allows the user to create a color palette on the client side.
 
 ### Setup
 1. Clone the [repository](https://github.com/Razorn7/Color-Palette-for-Vice-City-Multiplayer/)
-2. Copy the avaible folders such as `script/` and `sprites/` to your server `store/` folder.
-3. Load and start the script using `dofile("colorPalette/main.nut")` in your main script file.
-4. Path the events `GUI::ElementClick`, `GUI::ElementRelease` and `Script::ScriptProcess` to be like that:
+2. Open the repository and copy the available folders such as `script/` and `sprites/` to your server `store/` folder.
+3. Load and start the script using dofile("colorPalette/main.nut") in your main script file.
+4. Add the hooks to the `GUI::ElementClick`, `GUI::ElementRelease` and `Script::ScriptProcess` events to be like that:
 - ```squirrel
   function GUI::ElementClick(element, mouseX, mouseY) {
     _colorPalette.functions.hookPaletteColorOnClick(element);
@@ -29,6 +29,11 @@ A feature that allows the user to create a color palette on the client side.
 
 ### Events
 - `GUI::ReceiveColorFromPalette(Colour/RGBA colour)` - This event is called when the user selects some color
+
+### Note
+- `GUIColorPalette()` will return a GUICanvas element, then it can be children of another element (like a GUIWindow).
+- May contain bugs and problems when specifying some size.
+- You can't manage vehicle colors with this resource due to VC:MP limitations.
 
 ### Example of usage
 ```squirrel
