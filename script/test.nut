@@ -8,7 +8,7 @@ myColorPalette.Size = VectorScreen(200, 140);
 GUI.SetMouseEnabled(true);
 
 RGBtoHex <- function(r, g, b) { 
-    return format("#%02x%02x%02x", r, g, b);
+	return format("#%02x%02x%02x", r, g, b);
 }
 
 function Script::ScriptProcess() {
